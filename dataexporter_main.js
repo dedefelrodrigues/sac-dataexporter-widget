@@ -128,8 +128,6 @@
         this._shadowRoot.getElementById("exportBtn").style.backgroundColor =
           changedProperties.buttonColor;
       }
-
-      }
     }
 
     // ── CSV export handler ─────────────────────────────────────────────
