@@ -1,0 +1,107 @@
+{
+  "id": "com.sac.dataexporter",
+  "version": "1.0.0",
+  "name": "Data Exporter",
+  "description": "Exports table data to a CSV file with customizable delimiters and formatting",
+  "newInstancePrefix": "DataExporter",
+  "vendor": "Custom",
+  "eula": "",
+  "license": "",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-sac-dataexporter",
+      "url": "https://www.example.com/customwidgets/dataexporter/dataexporter_main.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    },
+    {
+      "kind": "styling",
+      "tag": "com-sac-dataexporter-styling",
+      "url": "https://www.example.com/customwidgets/dataexporter/dataexporter_styling.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+    "delimiter": {
+      "type": "string",
+      "description": "CSV field delimiter",
+      "default": "comma"
+    },
+    "customDelimiter": {
+      "type": "string",
+      "description": "Custom delimiter character (used when delimiter is set to 'custom')",
+      "default": "|"
+    },
+    "dateFormat": {
+      "type": "string",
+      "description": "Date format pattern for date values",
+      "default": "YYYY-MM-DD"
+    },
+    "decimalSeparator": {
+      "type": "string",
+      "description": "Decimal separator for numeric values",
+      "default": "."
+    },
+    "thousandsSeparator": {
+      "type": "string",
+      "description": "Thousands separator for numeric values",
+      "default": ""
+    },
+    "fileName": {
+      "type": "string",
+      "description": "Base file name for the exported CSV (without extension)",
+      "default": "data_export"
+    },
+    "includeHeaders": {
+      "type": "boolean",
+      "description": "Include column headers as the first row in the CSV",
+      "default": true
+    },
+    "buttonLabel": {
+      "type": "string",
+      "description": "Label text displayed on the export button",
+      "default": "Download CSV"
+    },
+    "buttonColor": {
+      "type": "string",
+      "description": "Background color of the export button (CSS color value)",
+      "default": "#0070F2"
+    },
+    "useRawValues": {
+      "type": "boolean",
+      "description": "Use raw numeric values instead of SAC-formatted values (allows custom number formatting)",
+      "default": false
+    }
+  },
+  "methods": {
+    "exportCSV": {
+      "description": "Triggers CSV export programmatically from a script"
+    }
+  },
+  "events": {
+    "onExportComplete": {
+      "description": "Called when the CSV export has completed successfully."
+    },
+    "onExportError": {
+      "description": "Called when the CSV export encounters an error."
+    }
+  },
+  "dataBindings": {
+    "dataBinding": {
+      "feeds": [
+        {
+          "id": "dimensions",
+          "description": "Dimensions (columns/rows) to include in the CSV",
+          "type": "dimension"
+        },
+        {
+          "id": "measures",
+          "description": "Measures (values) to include in the CSV",
+          "type": "mainStructureMember"
+        }
+      ]
+    }
+  }
+}
