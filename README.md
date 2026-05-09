@@ -76,37 +76,27 @@ SAC Table / Chart
 
 ### Step 1: Host the JavaScript Files
 
-Upload the three widget files to a publicly accessible web server (HTTPS required by SAC):
+The JS files are already served via **jsDelivr CDN** (free, correct MIME types, no setup needed):
 
-```
-https://your-server.com/customwidgets/dataexporter/
-├── dataexporter.json
-├── dataexporter_main.js
-└── dataexporter_styling.js
-```
+| File | CDN URL |
+|---|---|
+| `dataexporter_main.js` | `https://cdn.jsdelivr.net/gh/dedefelrodrigues/sac-dataexporter-widget@main/dataexporter_main.js` |
+| `dataexporter_styling.js` | `https://cdn.jsdelivr.net/gh/dedefelrodrigues/sac-dataexporter-widget@main/dataexporter_styling.js` |
 
-### Step 2: Update URLs in the JSON
+> **Note:** jsDelivr caches files for ~12 hours. For immediate updates during development, you can purge via [jsdelivr.com/tools/purge](https://www.jsdelivr.com/tools/purge) or use a version tag (`@v1.0.0` instead of `@main`).
 
-Edit `dataexporter.json` and replace the placeholder URLs:
+### Step 2: Upload to SAC
 
-```json
-"url": "https://www.example.com/customwidgets/dataexporter/dataexporter_main.js",
-"url": "https://www.example.com/customwidgets/dataexporter/dataexporter_styling.js",
-```
-
-→ Change to your actual server URLs.
-
-### Step 3: Upload to SAC
-
-1. In SAC, go to the **Analytic Applications** or **Stories** start page
-2. Select the **Custom Widgets** tab
-3. Click **+ (Create)**
-4. Choose **Browse…** under JSON File and select `dataexporter.json`
-5. Click **Create**
+1. Download `dataexporter.json` from the [GitHub repo](https://github.com/dedefelrodrigues/sac-dataexporter-widget)
+2. In SAC, go to the **Analytic Applications** or **Stories** start page
+3. Select the **Custom Widgets** tab
+4. Click **+ (Create)**
+5. Choose **Browse…** under JSON File and select `dataexporter.json`
+6. Click **Create**
 
 > **Prerequisites:** You must have the **Create** permission for **Custom Widget** in your SAC role.
 
-### Step 4: Use in a Story
+### Step 3: Use in a Story
 
 1. Open or create an **Optimized Story** or **Analytic Application**
 2. In the widget toolbar, find **Custom Widgets** → **Data Exporter**
