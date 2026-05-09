@@ -11,7 +11,7 @@
     {
       "kind": "main",
       "tag": "com-sac-dataexporter",
-      "url": "https://cdn.jsdelivr.net/gh/dedefelrodrigues/sac-dataexporter-widget@main/dataexporter_main_v3.js",
+      "url": "https://cdn.jsdelivr.net/gh/dedefelrodrigues/sac-dataexporter-widget@main/dataexporter_main_v4.js",
       "integrity": "",
       "ignoreIntegrity": true
     }
