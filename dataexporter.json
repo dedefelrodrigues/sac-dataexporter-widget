@@ -11,14 +11,14 @@
     {
       "kind": "main",
       "tag": "com-sac-dataexporter",
-      "url": "https://www.example.com/customwidgets/dataexporter/dataexporter_main.js",
+      "url": "https://cdn.jsdelivr.net/gh/dedefelrodrigues/sac-dataexporter-widget@main/dataexporter_main.js",
       "integrity": "",
       "ignoreIntegrity": true
     },
     {
       "kind": "styling",
       "tag": "com-sac-dataexporter-styling",
-      "url": "https://www.example.com/customwidgets/dataexporter/dataexporter_styling.js",
+      "url": "https://cdn.jsdelivr.net/gh/dedefelrodrigues/sac-dataexporter-widget@main/dataexporter_styling.js",
       "integrity": "",
       "ignoreIntegrity": true
     }
