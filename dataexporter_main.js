@@ -1,4 +1,6 @@
 (function () {
+  try {
+    console.log("[DataExporter] Script starting...");
   // ── Template (Shadow DOM) ────────────────────────────────────────────
   let template = document.createElement("template");
   template.innerHTML = `
@@ -491,5 +493,10 @@
   }
 
   // ── Register custom element ──────────────────────────────────────────
+  console.log("[DataExporter] Registering custom element...");
   customElements.define("com-sac-dataexporter", DataExporter);
+  console.log("[DataExporter] Custom element registered successfully.");
+  } catch (e) {
+    console.error("[DataExporter] Failed to initialize:", e.message, e.stack);
+  }
 })();

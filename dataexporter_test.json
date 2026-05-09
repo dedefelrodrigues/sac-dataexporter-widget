@@ -1,0 +1,22 @@
+{
+  "id": "com.sac.dataexporter.minimal",
+  "version": "1.0.0",
+  "name": "Data Exporter (TEST)",
+  "description": "Minimal test widget — blue box with text",
+  "newInstancePrefix": "DataExporterTest",
+  "vendor": "Custom",
+  "eula": "",
+  "license": "",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-sac-dataexporter",
+      "url": "https://cdn.jsdelivr.net/gh/dedefelrodrigues/sac-dataexporter-widget@main/dataexporter_main_minimal.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {},
+  "methods": {},
+  "events": {}
+}

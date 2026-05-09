@@ -1,4 +1,5 @@
 (function () {
+  console.log("[DataExporter MINIMAL] Script starting...");
   // Minimal test - just a colored box to verify the pipeline works
   let template = document.createElement("template");
   template.innerHTML = '<div style="background:#0070F2;color:#fff;padding:20px;text-align:center;border-radius:8px;font-family:sans-serif;width:100%;height:100%;box-sizing:border-box;display:flex;align-items:center;justify-content:center;"><span>Data Exporter Ready</span></div>';
